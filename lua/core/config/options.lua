@@ -9,6 +9,7 @@ o.tabstop = 4 -- insert 4 spaces for tab
 o.shiftwidth = 4 -- insert 4 spaces for tabbing
 o.expandtab = true -- use spaces when indenting
 o.smarttab = true -- use smart tabbing
+o.autoindent = true -- automatically indent new lines
 o.smartindent = true -- use smart indenting
 o.termguicolors = true -- idk what this is exactly
 o.clipboard = "unnamedplus" -- let nvim access os clipboard
