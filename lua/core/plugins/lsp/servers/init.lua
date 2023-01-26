@@ -1,15 +1,8 @@
-local M = {
-    -- clangd (c/c++)
-    clangd = require("core.plugins.lsp.servers.clangd"),
+local M = {}
 
-    -- omnisharp (c#)
-    -- omnisharp = require("core.plugins.lsp.servers.omnisharp"),
-
-    -- pyright (python)
-    pyright = require("core.plugins.lsp.servers.pyright"),
-
-    -- lua-language-server (lua)
-    sumneko_lua = require("core.plugins.lsp.servers.lua-language-server"),
-}
+M.clangd = require("core.plugins.lsp.servers.clangd") -- clangd (c/c++)
+-- M.omnisharp = require("core.plugins.lsp.servers.omnisharp") -- omnisharp (c#)
+M.pyright = require("core.plugins.lsp.servers.pyright") -- pyright (python)
+M.sumneko_lua = require("core.plugins.lsp.servers.lua-language-server") -- lua-language-server (lua)
 
 return M
