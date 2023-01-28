@@ -1,5 +1,3 @@
--- TODO: add cmp-nvim-lsp
-
 local M = {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -7,6 +5,7 @@ local M = {
         { "folke/neodev.nvim", config = true },
         "mason.nvim",
         "williamboman/mason-lspconfig.nvim",
+        "hrsh7th/cmp-nvim-lsp",
     },
     opts = {
         diagnostics = {},
