@@ -39,6 +39,7 @@ M.dependencies = {
     "hrsh7th/cmp-buffer", -- buffer completions
     "hrsh7th/cmp-path", -- path completions
     "hrsh7th/cmp-cmdline", -- cmdline completions
+    "saadparwaiz1/cmp_luasnip", -- snippet completions
 
     "hrsh7th/cmp-nvim-lua", -- neovim lua api completions
     -- plugin completions
@@ -54,8 +55,14 @@ M.dependencies = {
 
 M.opts = function()
     local cmp = require("cmp")
+    local luasnip = require("luasnip")
 
     return {
+        snippet = {
+             expand = function(args)
+                 luasnip.lsp_expand(args.body)
+             end,
+        },
         window = {
             -- completion = cmp.config.window.bordered(),
             documentation = cmp.config.window.bordered(),
@@ -71,6 +78,10 @@ M.opts = function()
             ["<Tab>"] = cmp.mapping(function(fallback)
                 if cmp.visible() then
                     cmp.select_next_item()
+                elseif luasnip.expandable() then
+                    luasnip.expand()
+                elseif luasnip.expand_or_jumpable() then
+                    luasnip.expand_or_jump()
                 else
                     fallback()
                 end
@@ -78,6 +89,8 @@ M.opts = function()
             ["<S-Tab>"] = cmp.mapping(function(fallback)
                 if cmp.visible() then
                     cmp.select_prev_item()
+                elseif luasnip.jumpable(-1) then
+                    luasnip.jump(-1)
                 else
                     fallback()
                 end
@@ -85,6 +98,7 @@ M.opts = function()
         }),
         sources = cmp.config.sources({
             { name = "nvim_lsp" },
+            { name = "luasnip" },
             { name = "path" },
             { name = "nvim_lua" },
             { name = "plugins" },
@@ -97,6 +111,7 @@ M.opts = function()
                 item.kind = string.format("%s", kind_icons[item.kind])
                 item.menu = ({
                     nvim_lsp = "[lsp]",
+                    luasnip = "[snippet]",
                     path = "[path]",
                     nvim_lua = "[nvim]",
                     plugins = "[plugin]",
