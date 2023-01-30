@@ -2,7 +2,7 @@ local M = {
     "nvim-neo-tree/neo-tree.nvim",
     dependencies = {
         "plenary.nvim",
-        "nvim-tree/nvim-web-devicons",
+        "nvim-web-devicons",
         "MunifTanjim/nui.nvim",
     },
     opts = {
