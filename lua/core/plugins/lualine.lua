@@ -5,6 +5,7 @@ local M = {
         options = {
             theme = "auto",
             disabled_filetypes = { "dashboard", "lazy" },
+            ignore_focus = { "neo-tree" },
             globalstatus = true,
         },
     },
