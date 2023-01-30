@@ -33,5 +33,4 @@ lazy.setup({
     },
     install = { colorscheme = { "onedark", "habamax" } }, -- default colorscheme
     checker = { enabled = true }, -- check plugin updates
-    change_detection = { enabled = false }, -- don't reload ui on config change
 })
