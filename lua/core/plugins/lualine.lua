@@ -4,7 +4,7 @@ local M = {
     opts = {
         options = {
             theme = "auto",
-            disabled_filetypes = { "dashboard", "lazy" },
+            disabled_filetypes = { "dashboard", "lazy", "alpha" },
             ignore_focus = { "neo-tree" },
             globalstatus = true,
         },
