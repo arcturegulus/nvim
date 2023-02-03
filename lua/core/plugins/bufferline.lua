@@ -9,8 +9,8 @@ local M = {
             diagnostics = "nvim_lsp",
             offsets = {
                 {
-                    filetype = "neo-tree",
-                    text = "neo-tree",
+                    filetype = "NvimTree",
+                    text = "explorer",
                     text_align = "center",
                 },
             },
