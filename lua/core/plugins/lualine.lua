@@ -5,7 +5,7 @@ local M = {
         options = {
             theme = "auto",
             disabled_filetypes = { "dashboard", "lazy", "alpha" },
-            ignore_focus = { "neo-tree" },
+            ignore_focus = { "NvimTree" },
             globalstatus = true,
         },
     },
