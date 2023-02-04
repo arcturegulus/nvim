@@ -40,15 +40,6 @@ M.dependencies = {
     "saadparwaiz1/cmp_luasnip", -- snippet completions
 
     "hrsh7th/cmp-nvim-lua", -- neovim lua api completions
-    -- plugin completions
-    {
-        "KadoBOT/cmp-plugins",
-        opts = {
-            files = {
-                "lua/core/plugins/",
-            },
-        },
-    },
 }
 
 M.opts = function()
@@ -104,7 +95,6 @@ M.opts = function()
             { name = "luasnip" },
             { name = "path" },
             { name = "nvim_lua" },
-            { name = "plugins" },
         }, {
             { name = "buffer" },
         }),
@@ -117,7 +107,6 @@ M.opts = function()
                     luasnip = "[snippet]",
                     path = "[path]",
                     nvim_lua = "[nvim]",
-                    plugins = "[plugin]",
                     buffer = "[buffer]",
                 })[entry.source.name]
                 return item
