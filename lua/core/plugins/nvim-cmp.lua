@@ -1,5 +1,3 @@
--- TODO: add luasnip
-
 local kind_icons = {
     Text = "",
     Method = "",
