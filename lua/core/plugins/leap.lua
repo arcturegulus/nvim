@@ -7,7 +7,9 @@ local M = {
             opts = { labeled_modes = "nv" },
         }
     },
-    opts = {},
+    opts = {
+        highlight_unlabeled_phase_one_targets = true,
+    },
     config = function(_, opts)
         local leap = require("leap")
         for i, opt in pairs(opts) do
