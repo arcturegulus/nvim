@@ -31,6 +31,6 @@ lazy.setup({
         lazy = true, -- default: lazy load plugins
         version = "*", -- default: get latest stable versions of plugins
     },
-    install = { colorscheme = { "onedark", "habamax" } }, -- default colorscheme
+    install = { colorscheme = { "habamax" } }, -- default colorscheme
     checker = { enabled = true }, -- check plugin updates
 })
