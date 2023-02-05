@@ -1,4 +1,5 @@
 {
+  "Comment.nvim": { "branch": "master", "commit": "d9cfae1059b62f7eacc09dba181efe4894e3b086" },
   "LuaSnip": { "branch": "master", "commit": "500981ff6cefc7343e3959ef0f939bd0bfd49ba9" },
   "alpha-nvim": { "branch": "main", "commit": "21a0f2520ad3a7c32c0822f943368dc063a569fb" },
   "bufdelete.nvim": { "branch": "master", "commit": "f79e9d186b42fba5f1b1362006e7c70240db97a4" },
