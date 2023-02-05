@@ -4,6 +4,7 @@ local M = {
     opts = {
         options = {
             mode = "buffers",
+            numbers = "both",
             diagnostics = "nvim_lsp",
             offsets = {
                 {
