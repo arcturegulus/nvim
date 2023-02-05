@@ -1,5 +1,3 @@
--- TODO: configure so that bufferline doesn't show up on alpha screen
-
 local M = {
     "akinsho/bufferline.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -14,6 +12,7 @@ local M = {
                     text_align = "center",
                 },
             },
+            always_show_bufferline = false,
         },
     },
     version = "3.*",
