@@ -42,6 +42,23 @@ return {
                 eob_lines = true,
             },
             lualine_style = "stealth",
+            custom_colors = function(colors)
+                -- replicating the Aurora X vscode theme
+                -- as close as is possible
+                colors.editor.cursor = "#FF000F"
+                colors.editor.bg = "#07090F"
+                colors.editor.fg = "#EEFFFF"
+                colors.editor.fg_dark = colors.editor.fg
+                colors.editor.line_numbers = "#1E2438"
+
+                colors.syntax.keyword = colors.main.cyan
+                colors.syntax.operator = colors.main.purple
+                colors.syntax.comments = "#546E7A"
+
+                colors.backgrounds.sidebars = colors.editor.bg
+                colors.backgrounds.floating_windows = colors.editor.bg
+                colors.backgrounds.non_current_windows = colors.editor.bg
+            end
         },
         config = function(_, opts)
             vim.g.material_style = "deep ocean"
