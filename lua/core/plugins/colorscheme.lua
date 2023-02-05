@@ -41,7 +41,7 @@ return {
                 background = settings.transparent,
                 eob_lines = true,
             },
-            lualine_style = "stealth",
+            lualine_style = "default",
             custom_colors = function(colors)
                 -- replicating the Aurora X vscode theme
                 -- as close as is possible
