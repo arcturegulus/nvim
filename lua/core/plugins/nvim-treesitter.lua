@@ -25,7 +25,7 @@ local M = {
 
         vim.cmd [[TSUpdate]]
     end,
-    event = "VeryLazy",
+    event = "BufReadPre",
 }
 
 return M
