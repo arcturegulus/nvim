@@ -48,7 +48,7 @@ return {
                 colors.editor.cursor = "#FF000F"
                 colors.editor.bg = "#07090F"
                 colors.editor.fg = "#EEFFFF"
-                colors.editor.fg_dark = colors.editor.fg
+                colors.editor.fg_dark = "#BBBBBB"
                 colors.editor.line_numbers = "#1E2438"
 
                 colors.syntax.keyword = colors.main.cyan
