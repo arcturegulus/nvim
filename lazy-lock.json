@@ -40,4 +40,5 @@
   "vim-illuminate": { "branch": "master", "commit": "d6ca7f77eeaf61b3e6ce9f0e5a978d606df44298" },
   "vim-repeat": { "branch": "master", "commit": "8106e142dfdc278ff3eaaadd7b362ad7949d4357" },
   "which-key.nvim": { "branch": "main", "commit": "16ed12a8493628c377606da2ebac50d80736ed37" }
+  "yuck.vim": { "branch": "master", "commit": "9b5e0370f70cc30383e1dabd6c215475915fe5c3" }
 }
