@@ -5,6 +5,7 @@ local M = {
         options = {
             mode = "buffers",
             numbers = "both",
+            indicator = { style = "underline" },
             diagnostics = "nvim_lsp",
             offsets = {
                 {
