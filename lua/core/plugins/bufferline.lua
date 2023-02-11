@@ -5,6 +5,8 @@ local M = {
         options = {
             mode = "buffers",
             numbers = "both",
+            close_command = "Bdelete %d",
+            right_mouse_command = "Bdelete %d",
             indicator = { style = "underline" },
             diagnostics = "nvim_lsp",
             offsets = {
