@@ -4,7 +4,12 @@ local M = {
     opts = {
         options = {
             theme = "auto",
-            disabled_filetypes = { "dashboard", "lazy", "alpha" },
+            disabled_filetypes = {
+                "dashboard",
+                "lazy",
+                "alpha",
+                "TelescopePrompt",
+            },
             ignore_focus = { "NvimTree" },
             globalstatus = true,
         },
