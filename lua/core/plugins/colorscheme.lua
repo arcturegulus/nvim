@@ -16,6 +16,7 @@ return {
                 vim.cmd [[colorscheme catppuccin]]
             end
         end,
+        event = "VeryLazy",
     },
 
     -- tokyonight.nvim
@@ -35,6 +36,7 @@ return {
                 vim.cmd [[colorscheme tokyonight]]
             end
         end,
+        event = "VeryLazy",
     },
 
     -- onedark.nvim
