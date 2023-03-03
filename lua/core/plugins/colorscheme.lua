@@ -18,6 +18,25 @@ return {
         end,
     },
 
+    -- tokyonight.nvim
+    {
+        "folke/tokyonight.nvim",
+        lazy = not settings.is_theme("tokyonight"),
+        opts = {
+            style = "moon",
+            transparent = settings.transparent,
+            styles = {
+                sidebars = "transparent",
+            },
+        },
+        config = function (_, opts)
+            require("tokyonight").setup(opts)
+            if settings.is_theme("tokyonight") then
+                vim.cmd [[colorscheme tokyonight]]
+            end
+        end,
+    },
+
     -- onedark.nvim
     {
         "navarasu/onedark.nvim",
