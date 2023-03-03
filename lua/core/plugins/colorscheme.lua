@@ -1,6 +1,23 @@
 local settings = require("core.config.settings")
 
 return {
+    -- catppuccin
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+        lazy = not settings.is_theme("catppuccin"),
+        opts = {
+            flavor = "mocha",
+            transparent_background = settings.transparent,
+        },
+        config = function(_, opts)
+            require("catppuccin").setup(opts)
+            if settings.is_theme("catppuccin") then
+                vim.cmd [[colorscheme catppuccin]]
+            end
+        end,
+    },
+
     -- onedark.nvim
     {
         "navarasu/onedark.nvim",
