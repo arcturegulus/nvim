@@ -1,7 +1,7 @@
 local M = {}
 
-M.theme = "onedark" -- theme on startup
-M.transparent = true -- transparency
+M.theme = "catppuccin" -- theme on startup
+M.transparent = false -- transparency
 M.number = true -- show line numbers in gutter
 M.relative_number = true -- show relative line numbers
 M.autochdir = false -- automatically change working directory
