@@ -21,57 +21,6 @@ return {
         event = "VeryLazy",
     },
 
-    -- material.nvim
-    {
-        "marko-cerovac/material.nvim",
-        lazy = not settings.is_theme("material"),
-        opts = {
-            plugins = {
-                "dashboard",
-                "gitsigns",
-                "indent-blankline",
-                "nvim-cmp",
-                "nvim-tree",
-                "nvim-web-devicons",
-                "telescope",
-                "trouble",
-                "which-key",
-            },
-            disable = {
-                background = settings.transparent,
-                eob_lines = true,
-            },
-            lualine_style = "default",
-            custom_colors = function(colors)
-                -- replicating the Aurora X vscode theme
-                -- as close as is possible
-                colors.editor.cursor = "#FF000F"
-                colors.editor.fg = "#EEFFFF"
-                colors.editor.fg_dark = "#BBBBBB"
-                colors.editor.line_numbers = "#1E2438"
-
-                colors.syntax.keyword = colors.main.cyan
-                colors.syntax.operator = colors.main.purple
-                colors.syntax.comments = "#546E7A"
-
-                if not settings.transparent then
-                    colors.editor.bg = "#07090F"
-                    colors.backgrounds.sidebars = colors.editor.bg
-                    colors.backgrounds.floating_windows = colors.editor.bg
-                    colors.backgrounds.non_current_windows = colors.editor.bg
-                end
-            end
-        },
-        config = function(_, opts)
-            vim.g.material_style = "deep ocean"
-            require("material").setup(opts)
-            if settings.is_theme("material") then
-                vim.cmd [[colorscheme material]]
-            end
-        end,
-        event = "VeryLazy",
-    },
-
     -- everblush
     {
         "Everblush/nvim",
@@ -85,6 +34,7 @@ return {
             if settings.is_theme("everblush") then
                 vim.cmd [[colorscheme everblush]]
             end
-        end
+        end,
+        event = "VeryLazy",
     },
 }
