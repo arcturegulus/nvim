@@ -6,10 +6,12 @@ local M = {
             "lua",
             "vim",
             "help",
+            "query",
 
             "cpp",
             "c_sharp",
             "comment",
+            "rust",
             "python",
         },
         auto_install = true,
