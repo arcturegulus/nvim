@@ -1,3 +1,5 @@
+local settings = require("core.config.settings")
+
 -- change kitty padding for nvim
 local function file_exists(name)
     local f = io.open(name, "r")
@@ -18,7 +20,7 @@ local function unset_padding()
     vim.cmd [[ silent !kill -SIGUSR1 $(pgrep kitty) ]]
 end
 
-if file_exists("~/.config/kitty/kitty.conf") then
+if settings.change_kitty_padding and file_exists("~/.config/kitty/kitty.conf") then
     local id = vim.api.nvim_create_augroup("ChangeKittyPadding", { clear = false })
 
     vim.api.nvim_create_autocmd("VimEnter", {
