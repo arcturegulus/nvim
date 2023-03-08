@@ -15,10 +15,6 @@ M.relative_number = true
 -- automatically change working directory
 M.autochdir = false
 
--- automatically change padding when running neovim in kitty
--- (applies to all running instances, whether or not they're running neovim)
-M.change_kitty_padding = false
-
 function M.is_theme(name)
     return name == M.theme
 end
