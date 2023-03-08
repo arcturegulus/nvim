@@ -1,12 +1,13 @@
 -- TODO: configure quitting neovim when
 -- the only buffer left is nvim-tree's
+local f = require("core.config.functions")
 
 local M = {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-web-devicons" },
     opts = {
         view = {
-            width = 30,
+            width = f.get_nvim_tree_width();
         },
         renderer = {
             group_empty = true,
