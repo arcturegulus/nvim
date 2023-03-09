@@ -6,6 +6,7 @@ local M = {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-web-devicons" },
     opts = {
+        sync_root_with_cwd = true,
         view = {
             width = f.get_nvim_tree_width();
         },
