@@ -17,6 +17,7 @@ local M = {
             },
             icons = {
                 git_placement = "after",
+                show = { folder_arrow = false },
                 glyphs = {
                     git = {
                         unstaged = "M",
