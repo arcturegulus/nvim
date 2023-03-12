@@ -8,6 +8,7 @@ local M = {
             "neo-tree",
             "Trouble",
             "lazy",
+            "norg",
         },
     },
     config = function(_, opts)

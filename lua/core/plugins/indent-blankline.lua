@@ -9,6 +9,7 @@ local M = {
             "neo-tree",
             "Trouble",
             "lazy",
+            "norg",
         },
     },
     event = "BufReadPre",
