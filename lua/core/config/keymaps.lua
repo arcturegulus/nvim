@@ -1,6 +1,9 @@
 local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
+-- set leader and localleader keys
+vim.g.maplocalleader = ","
+
 -- move to previous/next buffer
 map("n", "<M-,>", "<Cmd>BufferPrevious<CR>", opts)
 map("n", "<M-.>", "<Cmd>BufferNext<CR>", opts)
