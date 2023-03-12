@@ -17,7 +17,7 @@ map("n", "<M->>", "<Cmd>BufferMoveNext<CR>", opts)
 map("n", "<M-p>", "<Cmd>BufferPin<CR>", opts)
 
 -- close buffer
-map("n", "<M-c>", "<Cmd>Bdelete<CR>", opts)
+map("n", "<M-c>", "<Cmd>BufferClose<CR>", opts)
 
 -- magic buffer picker
 map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
