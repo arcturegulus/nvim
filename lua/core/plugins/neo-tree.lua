@@ -47,7 +47,7 @@ local M = {
             use_libuv_file_watcher = true,
         },
     },
-    cmd = "Neotree",
+    event = "VeryLazy",
 }
 
 return M
