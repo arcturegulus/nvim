@@ -10,6 +10,11 @@ local M = {
                     engine = "nvim-cmp",
                 },
             },
+            ["core.export"] = {
+                config = {
+                    export_dir = "exports",
+                },
+            },
             ["core.norg.concealer"] = {},
             ["core.norg.dirman"] = {
                 config = {
