@@ -34,13 +34,13 @@ local M = {
     config = function(_, opts)
         require("nvim-tree").setup(opts)
 
-        local buffer = vim.api.nvim_buf_get_name(0)
-        local real_file = vim.fn.filereadable(buffer) == 1
-        local no_name = buffer == "" and vim.bo[0].buftype == ""
-
-        if not real_file and not no_name then
-            require("nvim-tree.api").tree.open()
-        end
+        -- local buffer = vim.api.nvim_buf_get_name(0)
+        -- local real_file = vim.fn.filereadable(buffer) == 1
+        -- local no_name = buffer == "" and vim.bo[0].buftype == ""
+        --
+        -- if not real_file and not no_name then
+        --     require("nvim-tree.api").tree.open()
+        -- end
     end,
     event = "UIEnter",
 }
