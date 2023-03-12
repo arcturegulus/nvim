@@ -5,7 +5,7 @@ local M = {
             minimalist = {
                 callbacks = {
                     open_pre = function()
-                        require("nvim-tree.api").tree.close()
+                        vim.cmd [[NeoTreeClose]]
                     end,
                 },
             },
