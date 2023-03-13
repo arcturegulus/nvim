@@ -46,5 +46,6 @@
   "vim-illuminate": { "branch": "master", "commit": "49062ab1dd8fec91833a69f0a1344223dd59d643" },
   "vim-repeat": { "branch": "master", "commit": "8106e142dfdc278ff3eaaadd7b362ad7949d4357" },
   "which-key.nvim": { "branch": "main", "commit": "2a0c2d80c0a60f041afb1b789cfedbd510e2b2b6" },
+  "wrapping.nvim": { "branch": "master", "commit": "a4013c377e2ffa3be00fb67791d3605ae3115acb" },
   "yuck.vim": { "branch": "master", "commit": "9b5e0370f70cc30383e1dabd6c215475915fe5c3" }
 }
