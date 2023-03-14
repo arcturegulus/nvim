@@ -5,9 +5,10 @@ local M = {
             "help",
             "alpha",
             "dashboard",
-            "NvimTree",
+            "neo-tree",
             "Trouble",
             "lazy",
+            "norg",
         },
     },
     config = function(_, opts)
