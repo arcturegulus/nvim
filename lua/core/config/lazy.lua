@@ -14,9 +14,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.runtimepath:prepend(lazypath)
 
--- remap space as leader key
-vim.g.mapleader = " "
-
 -- setup lazy.nvim
 local status_ok, lazy = pcall(require, "lazy")
 if not status_ok then
