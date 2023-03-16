@@ -4,7 +4,6 @@ local M = {
         "plenary.nvim",
         "nvim-telescope/telescope-fzf-native.nvim",
     },
-    version = false,
     cmd = "Telescope",
 }
 

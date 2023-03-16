@@ -12,7 +12,6 @@ local M = {
         servers = require("core.plugins.lsp.servers"),
         setup = {},
     },
-    branch = "master",
     event = "BufReadPre",
 }
 
