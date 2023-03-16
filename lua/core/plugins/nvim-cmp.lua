@@ -28,7 +28,6 @@ local kind_icons = {
 
 local M = {
     "hrsh7th/nvim-cmp",
-    version = false,
     event = "InsertEnter",
 }
 
