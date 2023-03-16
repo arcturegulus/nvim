@@ -4,6 +4,9 @@ local opts = { noremap = true, silent = true }
 -- set leader and localleader keys
 vim.g.maplocalleader = ","
 
+-- toggle file explorer
+map("n", "<Leader>fx", "<Cmd>Neotree focus toggle<CR>", opts)
+
 -- move to previous/next buffer
 map("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
 map("n", "<C-.>", "<Cmd>BufferNext<CR>", opts)
