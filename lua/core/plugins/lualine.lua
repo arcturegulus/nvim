@@ -1,5 +1,6 @@
 local M = {
     "nvim-lualine/lualine.nvim",
+    enabled = false,
     dependencies = { "nvim-web-devicons" },
     opts = {
         options = {
