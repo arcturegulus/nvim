@@ -1,5 +1,3 @@
-local colors = require("core.plugins.heirline.colors")
-
 local mode = {
     init = function(self)
         self.mode = string.sub(vim.fn.mode(1), 1, 1)
@@ -20,7 +18,7 @@ local mode = {
             ["!"] = "shell",
             t = "terminal",
         },
-        colors = colors,
+        colors = require("core.plugins.heirline.colors"),
     },
     provider = function(self)
         return "  " .. self.names[self.mode] .. " "
