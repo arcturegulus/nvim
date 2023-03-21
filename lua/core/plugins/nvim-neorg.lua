@@ -19,8 +19,8 @@ local M = {
             ["core.norg.dirman"] = {
                 config = {
                     workspaces = {
-                        home = "~/notes/home",
-                        school = "~/notes/school",
+                        home = "~/neorg/home",
+                        school = "~/neorg/school",
                     },
                 },
             },
