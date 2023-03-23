@@ -5,7 +5,7 @@ local opts = { noremap = true, silent = true }
 vim.g.maplocalleader = ","
 
 -- toggle file explorer
-map("n", "<Leader>fx", "<Cmd>Neotree focus toggle<CR>", opts)
+map("n", "<Leader>x", "<Cmd>Neotree focus toggle<CR>", opts)
 
 -- move to previous/next buffer
 map("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
@@ -24,3 +24,6 @@ map("n", "<C-x>", "<Cmd>BufferClose<CR>", opts)
 
 -- magic buffer picker
 map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
+
+-- find files
+
