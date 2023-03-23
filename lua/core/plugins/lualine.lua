@@ -4,6 +4,8 @@ local M = {
     opts = {
         options = {
             theme = "auto",
+            component_separators = "┃",
+            section_separators = "",
             disabled_filetypes = {
                 "dashboard",
                 "lazy",
