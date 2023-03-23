@@ -8,6 +8,7 @@ local M = {
     opts = {
         sync_root_with_cwd = true,
         view = {
+            hide_root_folder = true,
             width = f.get_nvim_tree_width();
         },
         renderer = {
