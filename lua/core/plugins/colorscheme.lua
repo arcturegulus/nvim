@@ -24,7 +24,7 @@ return {
         "folke/tokyonight.nvim",
         lazy = not settings.is_theme("tokyonight"),
         opts = {
-            style = "moon",
+            style = "night",
             transparent = settings.transparent,
             styles = {
                 sidebars = "transparent",
