@@ -9,6 +9,9 @@ return {
         opts = {
             flavor = "mocha",
             transparent_background = settings.transparent,
+            dim_inactive = {
+                enabled = true,
+            },
         },
         config = function(_, opts)
             require("catppuccin").setup(opts)
