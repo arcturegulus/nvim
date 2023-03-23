@@ -7,7 +7,6 @@ local M = {
     },
     opts = {
         show_dirname = false,
-        show_basename = false,
         theme = "auto",
     },
     event = "BufReadPre",
