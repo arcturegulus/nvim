@@ -29,6 +29,13 @@ local M = {
             ignore_focus = { "neo-tree" },
             globalstatus = true,
         },
+        sections = {
+            lualine_b = {
+                { "b:gitsigns_head", icon = "󰜋" },
+                { "diff", source = diff_source },
+            },
+            lualine_c = { "filename", "diagnostics" },
+        },
     },
     event = "VeryLazy",
 }
