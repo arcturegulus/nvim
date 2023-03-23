@@ -12,6 +12,19 @@ return {
             dim_inactive = {
                 enabled = true,
             },
+            integrations = {
+                barbar = true,
+                indent_blankline = { enabled = true },
+                leap = true,
+                lsp_trouble = true,
+                mason = true,
+                native_lsp = { enabled = true },
+                neotree = true,
+                notify = true,
+                treesitter = true,
+                illuminate = true,
+                which_key = true,
+            },
         },
         config = function(_, opts)
             require("catppuccin").setup(opts)
