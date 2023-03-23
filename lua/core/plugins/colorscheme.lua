@@ -28,6 +28,10 @@ return {
                         fg = colors.mantle,
                         bg = colors.mantle,
                     },
+                    WinSeparator = {
+                        fg = colors.mantle,
+                        bg = colors.mantle,
+                    },
                 }
             end,
         },
