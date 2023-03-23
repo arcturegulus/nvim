@@ -98,17 +98,12 @@ M.opts = function()
             { name = "buffer" },
         }),
         formatting = {
-            fields = { "kind", "abbr", "menu" },
-            format = function(entry, item)
-                item.kind = string.format("%s", kind_icons[item.kind])
-                item.menu = ({
-                    nvim_lsp = "[lsp]",
-                    luasnip = "[snippet]",
-                    path = "[path]",
-                    nvim_lua = "[nvim]",
-                    buffer = "[buffer]",
-                })[entry.source.name]
-                return item
+            fields = { "abbr", "kind" },
+            format = function(_, vim_item)
+                local icons = require("core.plugins.cmp.icons").lspkind
+                vim_item.kind = string.format("%s %s", icons[vim_item.kind], vim_item.kind)
+
+                return vim_item
             end,
         },
     }
