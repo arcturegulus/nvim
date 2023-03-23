@@ -35,6 +35,7 @@ local M = {
                 { "diff", source = diff_source },
             },
             lualine_c = { "filename", "diagnostics" },
+            lualine_x = { "filetype" },
         },
     },
     event = "VeryLazy",
