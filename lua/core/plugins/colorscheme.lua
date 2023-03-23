@@ -22,6 +22,14 @@ return {
                 illuminate = true,
                 which_key = true,
             },
+            custom_highlights = function(colors)
+                return {
+                    NvimTreeWinSeparator = {
+                        fg = colors.mantle,
+                        bg = colors.mantle,
+                    },
+                }
+            end,
         },
         config = function(_, opts)
             require("catppuccin").setup(opts)
