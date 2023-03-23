@@ -9,9 +9,6 @@ return {
         opts = {
             flavor = "mocha",
             transparent_background = settings.transparent,
-            dim_inactive = {
-                enabled = true,
-            },
             integrations = {
                 barbar = true,
                 indent_blankline = { enabled = true },
