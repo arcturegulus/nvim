@@ -8,7 +8,7 @@ end
 vim.api.nvim_create_autocmd("VimResized", {
     group = augroup("AutoNvimTreeResize"),
     callback = function ()
-        vim.cmd(string.format("NvimTreeResize %s", f.get_neo_tree_width()))
+        vim.cmd(string.format("NvimTreeResize %s", f.get_nvim_tree_width()))
     end
 })
 
