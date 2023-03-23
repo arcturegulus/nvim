@@ -5,7 +5,7 @@ local M = {
             "help",
             "alpha",
             "dashboard",
-            "neo-tree",
+            "NvimTree",
             "Trouble",
             "lazy",
             "norg",

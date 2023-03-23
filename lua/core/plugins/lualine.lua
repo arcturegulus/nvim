@@ -26,7 +26,7 @@ local M = {
                 "alpha",
                 "TelescopePrompt",
             },
-            ignore_focus = { "neo-tree" },
+            ignore_focus = { "NvimTree" },
             globalstatus = true,
         },
         sections = {
