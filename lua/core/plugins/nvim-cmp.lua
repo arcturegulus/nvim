@@ -1,31 +1,3 @@
-local kind_icons = {
-    Text = "",
-    Method = "",
-    Function = "",
-    Constructor = "",
-    Field = "",
-    Variable = "",
-    Class = "",
-    Interface = "",
-    Module = "",
-    Property = "",
-    Unit = "",
-    Value = "",
-    Enum = "",
-    Keyword = "",
-    Snippet = "",
-    Color = "",
-    File = "",
-    Reference = "",
-    Folder = "",
-    EnumMember = "",
-    Constant = "",
-    Struct = "",
-    Event = "",
-    Operator = "",
-    TypeParameter = "",
-}
-
 local M = {
     "hrsh7th/nvim-cmp",
     event = "InsertEnter",
@@ -58,8 +30,8 @@ M.opts = function()
              end,
         },
         window = {
-            -- completion = cmp.config.window.bordered(),
-            -- documentation = cmp.config.window.bordered(),
+            completion = cmp.config.window.bordered(),
+            documentation = cmp.config.window.bordered(),
         },
         mapping = cmp.mapping.preset.insert({
             ["<C-b>"] = cmp.mapping.scroll_docs(-4),
@@ -94,21 +66,15 @@ M.opts = function()
             { name = "luasnip" },
             { name = "path" },
             { name = "nvim_lua" },
-        }, {
             { name = "buffer" },
         }),
         formatting = {
-            fields = { "kind", "abbr", "menu" },
-            format = function(entry, item)
-                item.kind = string.format("%s", kind_icons[item.kind])
-                item.menu = ({
-                    nvim_lsp = "[lsp]",
-                    luasnip = "[snippet]",
-                    path = "[path]",
-                    nvim_lua = "[nvim]",
-                    buffer = "[buffer]",
-                })[entry.source.name]
-                return item
+            fields = { "abbr", "kind" },
+            format = function(_, vim_item)
+                local icons = require("core.plugins.cmp.icons").lspkind
+                vim_item.kind = string.format("%s %s", icons[vim_item.kind], vim_item.kind)
+
+                return vim_item
             end,
         },
     }

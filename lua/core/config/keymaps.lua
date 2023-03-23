@@ -24,3 +24,6 @@ map("n", "<C-x>", "<Cmd>BufferClose<CR>", opts)
 
 -- magic buffer picker
 map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
+
+-- find files
+
