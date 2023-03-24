@@ -21,6 +21,7 @@ local M = {
                     workspaces = {
                         home = "~/neorg/home",
                         school = "~/neorg/school",
+                        prose = "~/neorg/prose",
                     },
                 },
             },
