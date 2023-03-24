@@ -4,12 +4,6 @@ local opts = { noremap = true, silent = true }
 -- set leader and localleader keys
 vim.g.maplocalleader = ","
 
--- toggle file explorer
-map("n", "<Leader>fe", "<Cmd>NvimTreeToggle<CR>", opts)
-
--- toggle trouble buffer
-map("n", "<Leader>tt", "<Cmd>TroubleToggle<CR>", opts)
-
 -- move to previous/next buffer
 map("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
 map("n", "<C-.>", "<Cmd>BufferNext<CR>", opts)
@@ -27,6 +21,12 @@ map("n", "<C-x>", "<Cmd>BufferClose<CR>", opts)
 
 -- magic buffer picker
 map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
+
+-- toggle file explorer
+map("n", "<Leader>fe", "<Cmd>NvimTreeToggle<CR>", opts)
+
+-- toggle trouble buffer
+map("n", "<Leader>tt", "<Cmd>TroubleToggle<CR>", opts)
 
 -- find files
 
