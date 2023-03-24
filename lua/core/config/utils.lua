@@ -25,4 +25,16 @@ function M.get_neo_tree_width()
     return width_str or width
 end
 
+M.text_filetypes = {
+    "asciidoc",
+    "gitcommit",
+    "latex",
+    "mail",
+    "markdown",
+    "rst",
+    "tex",
+    "text",
+    "norg",
+}
+
 return M

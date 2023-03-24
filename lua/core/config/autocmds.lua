@@ -43,3 +43,10 @@ vim.api.nvim_create_autocmd("FileType", {
     end,
     pattern = "NvimTree",
 })
+
+-- auto-initialize vim-pencil for text filetypes
+vim.api.nvim_create_autocmd("FileType", {
+    group = augroup("AutoPencil"),
+    command = "PencilSoft",
+    pattern = require("core.config.utils").text_filetypes,
+})
