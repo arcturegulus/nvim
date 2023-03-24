@@ -28,5 +28,6 @@ map("n", "<Leader>fe", "<Cmd>NvimTreeToggle<CR>", opts)
 -- toggle trouble buffer
 map("n", "<Leader>tt", "<Cmd>TroubleToggle<CR>", opts)
 
--- find files
 
+-- find file in working directory
+map("n", "<Leader>fd", "<Cmd>Telescope find_files<CR>", opts)
