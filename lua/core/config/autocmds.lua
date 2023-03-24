@@ -1,4 +1,4 @@
-local f = require("core.config.functions")
+local utils = require("core.config.utils")
 
 local function augroup(name)
     return vim.api.nvim_create_augroup(name, { clear = true })
@@ -8,7 +8,7 @@ end
 vim.api.nvim_create_autocmd("VimResized", {
     group = augroup("AutoNvimTreeResize"),
     callback = function ()
-        vim.cmd(string.format("NvimTreeResize %s", f.get_nvim_tree_width()))
+        vim.cmd(string.format("NvimTreeResize %s", utils.get_nvim_tree_width()))
     end
 })
 
