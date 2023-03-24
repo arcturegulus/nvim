@@ -48,5 +48,5 @@ vim.api.nvim_create_autocmd("FileType", {
 vim.api.nvim_create_autocmd("FileType", {
     group = augroup("AutoPencil"),
     command = "PencilSoft",
-    pattern = require("core.config.utils").text_filetypes,
+    pattern = utils.text_filetypes,
 })
