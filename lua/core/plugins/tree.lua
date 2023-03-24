@@ -31,6 +31,15 @@ local M = {
                 },
             },
         },
+        diagnostics = {
+            enable = true,
+            icons = {
+                hint = "󰗖",
+                info = "󰋽",
+                warning = "󰀪",
+                error = "󰅚",
+            },
+        },
     },
     config = function(_, opts)
         require("nvim-tree").setup(opts)
