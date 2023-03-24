@@ -31,7 +31,7 @@ local M = {
         },
         sections = {
             lualine_b = {
-                { "b:gitsigns_head", icon = "󰜋" },
+                { "b:gitsigns_head", icon = "󰘬" },
                 { "diff", source = diff_source },
             },
             lualine_c = { "filename", "diagnostics" },
