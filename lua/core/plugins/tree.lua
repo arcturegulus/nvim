@@ -1,6 +1,6 @@
 -- TODO: configure quitting neovim when
 -- the only buffer left is nvim-tree's
-local f = require("core.config.functions")
+local utils = require("core.config.utils")
 
 local M = {
     "nvim-tree/nvim-tree.lua",
@@ -9,7 +9,7 @@ local M = {
         sync_root_with_cwd = true,
         view = {
             hide_root_folder = true,
-            width = f.get_nvim_tree_width;
+            width = utils.get_nvim_tree_width;
         },
         renderer = {
             group_empty = true,
