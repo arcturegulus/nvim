@@ -7,6 +7,9 @@ vim.g.maplocalleader = ","
 -- toggle file explorer
 map("n", "<Leader>fe", "<Cmd>NvimTreeToggle<CR>", opts)
 
+-- toggle trouble buffer
+map("n", "<Leader>tt", "<Cmd>TroubleToggle<CR>", opts)
+
 -- move to previous/next buffer
 map("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
 map("n", "<C-.>", "<Cmd>BufferNext<CR>", opts)
