@@ -22,11 +22,11 @@ local M = {
                 show = { folder_arrow = false },
                 glyphs = {
                     git = {
-                        unstaged = "M",
-                        staged = "S",
-                        renamed = "R",
-                        untracked = "U",
-                        deleted = "D",
+                        unstaged = "󱓌",
+                        staged = "󱓏",
+                        renamed = "󰁔",
+                        untracked = "󰇘",
+                        deleted = "󰛲",
                     },
                 },
             },
