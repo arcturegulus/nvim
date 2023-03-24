@@ -5,7 +5,7 @@ local opts = { noremap = true, silent = true }
 vim.g.maplocalleader = ","
 
 -- toggle file explorer
-map("n", "<Leader>x", "<Cmd>NvimTreeToggle<CR>", opts)
+map("n", "<Leader>fe", "<Cmd>NvimTreeToggle<CR>", opts)
 
 -- move to previous/next buffer
 map("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
