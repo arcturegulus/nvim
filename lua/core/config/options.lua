@@ -17,6 +17,8 @@ o.shiftwidth = 4 -- insert 4 spaces for indents
 o.autoindent = true -- automatically indent new lines
 o.smartindent = true -- use smart indenting
 
+o.smartcase = true -- case-sensitive searches only when using an uppercase letter
+
 o.clipboard = "unnamedplus" -- let nvim access os clipboard
 
 o.autochdir = settings.autochdir -- automatically change working directory
