@@ -33,3 +33,8 @@ map("n", "<Leader>gd", "<Cmd>Telescope live_grep<CR>", opts)
 
 -- find file in working directory
 map("n", "<Leader>fd", "<Cmd>Telescope find_files<CR>", opts)
+
+-- rename symbol under cursor
+map("n", "<Leader>rn", function()
+    return ":IncRename " .. vim.fn.expand("<cword>")
+end, { expr = true })
