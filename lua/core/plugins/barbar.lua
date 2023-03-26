@@ -1,5 +1,6 @@
 local M = {
     "romgrk/barbar.nvim",
+    enabled = false,
     dependencies = { "nvim-web-devicons" },
     opts = {
         auto_hide = false,
