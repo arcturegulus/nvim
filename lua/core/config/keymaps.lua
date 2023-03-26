@@ -4,6 +4,9 @@ local opts = { noremap = true, silent = true }
 -- set leader and localleader keys
 vim.g.maplocalleader = ","
 
+-- open lazy menu
+map("n", "<Leader>L", "<Cmd>Lazy<CR>", opts)
+
 -- move to previous/next buffer
 map("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
 map("n", "<C-.>", "<Cmd>BufferNext<CR>", opts)
