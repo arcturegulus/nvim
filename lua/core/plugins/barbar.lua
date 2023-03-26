@@ -3,7 +3,10 @@ local M = {
     dependencies = { "nvim-web-devicons" },
     opts = {
         auto_hide = false,
-        exclude_ft = { "NvimTree" },
+        exclude_ft = {
+            "NvimTree",
+            "fugitive",
+        },
         icon_pinned = "󰐃",
         maximum_length = 20,
     },
