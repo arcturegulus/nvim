@@ -25,6 +25,7 @@ local M = {
                 "lazy",
                 "alpha",
                 "TelescopePrompt",
+                "fugitive",
             },
             ignore_focus = { "NvimTree" },
             globalstatus = true,
