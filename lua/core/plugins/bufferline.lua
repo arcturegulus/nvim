@@ -16,6 +16,7 @@ local M = {
                     separator = true,
                 },
             },
+            separator_style = { "", "" },
             always_show_bufferline = true,
         },
     },
