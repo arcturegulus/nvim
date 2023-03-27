@@ -21,7 +21,6 @@ local M = {
             component_separators = "┃",
             section_separators = "",
             disabled_filetypes = {
-                "dashboard",
                 "lazy",
                 "alpha",
                 "TelescopePrompt",

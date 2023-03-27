@@ -4,7 +4,6 @@ local M = {
         filetypes_denylist = {
             "help",
             "alpha",
-            "dashboard",
             "NvimTree",
             "Trouble",
             "lazy",
