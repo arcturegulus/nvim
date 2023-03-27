@@ -11,22 +11,21 @@ map("n", "<Leader>L", "<Cmd>Lazy<CR>", opts)
 map("n", "<Leader>G", "<Cmd>Git<CR>", opts)
 
 -- move to previous/next buffer
-map("n", "<C-,>", "<Cmd>BufferPrevious<CR>", opts)
-map("n", "<C-.>", "<Cmd>BufferNext<CR>", opts)
+map("n", "<C-,>", "<Cmd>BufferLineCyclePrev<CR>", opts)
+map("n", "<C-.>", "<Cmd>BufferLineCycleNext<CR>", opts)
 
 -- re-order buffer to previous/next
--- TODO: these don't work for some reason
-map("n", "<C-<>", "<Cmd>BufferMovePrevious<CR>", opts)
-map("n", "<C->>", "<Cmd>BufferMoveNext<CR>", opts)
+map("n", "<C-<>", "<Cmd>BufferLineMovePrev<CR>", opts)
+map("n", "<C->>", "<Cmd>BufferLineMoveNext<CR>", opts)
 
 -- pin/unpin buffer
-map("n", "<C-p>", "<Cmd>BufferPin<CR>", opts)
+map("n", "<C-p>", "<Cmd>BufferLineTogglePin<CR>", opts)
 
 -- close buffer
-map("n", "<C-x>", "<Cmd>BufferClose<CR>", opts)
+map("n", "<C-x>", "<Cmd>Bdelete<CR>", opts)
 
--- magic buffer picker
-map("n", "<C-p>", "<Cmd>BufferPick<CR>", opts)
+-- go to buffer
+map("n", "<C-P>", "<Cmd>BufferLinePick<CR>", opts)
 
 -- toggle file explorer
 map("n", "<Leader>fe", "<Cmd>NvimTreeToggle<CR>", opts)
