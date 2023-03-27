@@ -13,6 +13,7 @@ local M = {
                 {
                     filetype = "NvimTree",
                     text_align = "center",
+                    separator = true,
                 },
             },
             always_show_bufferline = false,
