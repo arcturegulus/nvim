@@ -4,7 +4,7 @@ local M = {
     opts = {
         options = {
             mode = "buffers",
-            numbers = "both",
+            numbers = "ordinal",
             close_command = "Bdelete %d",
             right_mouse_command = "Bdelete %d",
             indicator = { style = "underline" },
