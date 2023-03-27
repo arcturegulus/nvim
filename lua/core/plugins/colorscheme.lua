@@ -24,6 +24,11 @@ return {
             },
             custom_highlights = function(colors)
                 return {
+                    BufferLineFill = { bg = colors.mantle },
+                    BufferLineOffsetSeparator = {
+                        fg = colors.mantle,
+                        bg = colors.mantle,
+                    },
                     NvimTreeWinSeparator = {
                         fg = colors.mantle,
                         bg = colors.mantle,
