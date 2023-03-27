@@ -39,7 +39,7 @@ local M = {
             lualine_x = { "filetype" },
         },
     },
-    event = "VeryLazy",
+    event = "UIEnter",
 }
 
 return M
