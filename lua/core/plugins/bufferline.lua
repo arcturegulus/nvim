@@ -16,7 +16,7 @@ local M = {
                     separator = true,
                 },
             },
-            always_show_bufferline = false,
+            always_show_bufferline = true,
         },
     },
     version = "3.*",
