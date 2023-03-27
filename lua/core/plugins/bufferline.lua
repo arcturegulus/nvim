@@ -21,7 +21,7 @@ local M = {
         },
     },
     version = "3.*",
-    event = "VeryLazy",
+    event = "UIEnter",
 }
 
 return M
