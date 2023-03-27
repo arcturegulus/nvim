@@ -12,7 +12,6 @@ local M = {
             offsets = {
                 {
                     filetype = "NvimTree",
-                    text = "explorer",
                     text_align = "center",
                 },
             },
