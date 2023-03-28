@@ -15,7 +15,11 @@ local M = {
                     export_dir = "exports",
                 },
             },
-            ["core.norg.concealer"] = {},
+            ["core.norg.concealer"] = {
+                config = {
+                    folds = false,
+                },
+            },
             ["core.norg.dirman"] = {
                 config = {
                     workspaces = {
