@@ -5,6 +5,11 @@ local M = {
     opts = {
         load = {
             ["core.defaults"] = {},
+            ["core.norg.esupports.metagen"] = {
+                config = {
+                    type = "auto",
+                },
+            },
             ["core.norg.completion"] = {
                 config = {
                     engine = "nvim-cmp",
