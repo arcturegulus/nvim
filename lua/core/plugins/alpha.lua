@@ -9,4 +9,22 @@ local M = {
     event = "VimEnter",
 }
 
+M.opts = function()
+    local dashboard = require("alpha.themes.dashboard")
+    local logo = [[
+                  ▄    ▄                      
+                 █ █  █ █                     
+ ▄▄▄▄     ▄▄   ▄▄▀▀  █  █   ▄▄    ▄▄▄ ▄  ▄▄ ▄ 
+  █  █  ▄▀  █ ▀▀█▄   ▀▄█  ▄▀  █ ▄▀ █ █  █  █  
+▄▀  █▀ ▄█▄▀▀ ▄ █  █ ▄▄█▀ ▄█▄▀▀ ▄█   █ ▄█  ▄█  
+     ▀▀  ▀▀▀▀ ▄▀  █    ▀▀  ▀▀▀▀  ▀▀██▀  ▀▀  ▀▀
+bluereflega's █   █ neovim       ▄▀▄▀         
+               ▀▄▀               ▀▄▀          
+    ]]
+
+    dashboard.section.header.val = vim.split(logo, "\n")
+
+    return dashboard
+end
+
 return M
