@@ -21,6 +21,7 @@ local M = {
     opts = {
         modes = {
             ataraxis = {
+                quit_untoggles = false,
                 callbacks = {
                     open_pre = close_nvim_tree(),
                     close_pos = open_nvim_tree(),
