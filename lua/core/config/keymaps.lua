@@ -7,9 +7,6 @@ vim.g.maplocalleader = ","
 -- open lazy menu
 map("n", "<Leader>L", "<Cmd>Lazy<CR>", opts)
 
--- open git summary (fugitive)
-map("n", "<Leader>G", "<Cmd>Git<CR>", opts)
-
 -- move to previous/next buffer
 map("n", "<C-,>", "<Cmd>BufferLineCyclePrev<CR>", opts)
 map("n", "<C-.>", "<Cmd>BufferLineCycleNext<CR>", opts)
