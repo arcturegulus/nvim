@@ -30,6 +30,9 @@ map("n", "<Leader>fe", "<Cmd>NvimTreeToggle<CR>", opts)
 -- toggle trouble buffer
 map("n", "<Leader>tr", "<Cmd>TroubleToggle<CR>", opts)
 
+-- toggle true-zen (ataraxis)
+map("n", "<Leader>tz", "<Cmd>TZAtaraxis<CR>", opts)
+
 -- grep working directory
 map("n", "<Leader>gd", "<Cmd>Telescope live_grep<CR>", opts)
 
