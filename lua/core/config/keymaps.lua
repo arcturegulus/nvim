@@ -46,3 +46,7 @@ map("n", "<Leader>fd", "<Cmd>Telescope find_files<CR>", opts)
 map("n", "<Leader>rn", function()
     return ":IncRename " .. vim.fn.expand("<cword>")
 end, { expr = true })
+
+map("n", "<Leader>p", function()
+    require("nabla").popup()
+end, opts)
