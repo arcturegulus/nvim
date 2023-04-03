@@ -18,7 +18,7 @@ local M = {
     opts = {
         options = {
             theme = "auto",
-            component_separators = "┃",
+            component_separators = "│",
             section_separators = "",
             disabled_filetypes = {
                 "lazy",
