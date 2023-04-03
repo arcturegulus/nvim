@@ -1,5 +1,6 @@
 local M = {
     "folke/noice.nvim",
+    enabled = false,
     dependencies = {
         "MunifTanjim/nui.nvim",
         "nvim-notify",
