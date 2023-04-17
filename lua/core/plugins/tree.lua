@@ -8,10 +8,10 @@ local M = {
     opts = {
         sync_root_with_cwd = true,
         view = {
-            hide_root_folder = true,
             width = utils.get_nvim_tree_width;
         },
         renderer = {
+            root_folder_label = false,
             group_empty = true,
             highlight_git = true,
             indent_markers = {
