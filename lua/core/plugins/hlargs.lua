@@ -1,6 +1,6 @@
 local M = {
     "m-demare/hlargs.nvim",
-    opts = {},
+    config = true,
     event = "BufReadPre",
 }
 
