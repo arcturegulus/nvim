@@ -4,7 +4,9 @@ local M = {
         "dressing.nvim",
         "telescope.nvim",
     },
-    config = true,
+    config = {
+        templates = { "builtin", "user.cpp_build" },
+    },
     event = "VeryLazy",
 }
 
