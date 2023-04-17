@@ -4,6 +4,7 @@ local M = {
         "dressing.nvim",
         "telescope.nvim",
     },
+    config = true,
     event = "VeryLazy",
 }
 
