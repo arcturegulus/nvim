@@ -1,6 +1,6 @@
 local M = {
     "numToStr/Comment.nvim",
-    opts = {}, -- same problem as nvim-surround
+    config = true,
     event = "BufReadPre",
 }
 

@@ -1,6 +1,6 @@
 local M = {
     "smjonas/inc-rename.nvim",
-    opts = {},
+    config = true,
     event = "BufReadPre",
 }
 
