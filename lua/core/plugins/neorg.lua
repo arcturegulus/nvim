@@ -5,12 +5,12 @@ local M = {
     opts = {
         load = {
             ["core.defaults"] = {},
-            ["core.norg.esupports.metagen"] = {
+            ["core.esupports.metagen"] = {
                 config = {
                     type = "auto",
                 },
             },
-            ["core.norg.completion"] = {
+            ["core.completion"] = {
                 config = {
                     engine = "nvim-cmp",
                 },
@@ -20,12 +20,12 @@ local M = {
                     export_dir = "exports",
                 },
             },
-            ["core.norg.concealer"] = {
+            ["core.concealer"] = {
                 config = {
                     folds = false,
                 },
             },
-            ["core.norg.dirman"] = {
+            ["core.dirman"] = {
                 config = {
                     workspaces = {
                         home = "~/neorg/home",
