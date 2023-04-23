@@ -40,6 +40,7 @@ local M = {
                 error = "󰅚",
             },
         },
+        git = { ignore = false },
     },
     config = function(_, opts)
         require("nvim-tree").setup(opts)
