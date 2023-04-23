@@ -6,6 +6,7 @@ local M = {
     },
     config = {
         templates = { "builtin", "user.cpp_build" },
+        strategy = "toggleterm",
     },
     event = "VeryLazy",
 }
