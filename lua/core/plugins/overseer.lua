@@ -5,7 +5,6 @@ local M = {
         "telescope.nvim",
     },
     config = {
-        templates = { "builtin", "user.cpp_build" },
         strategy = "toggleterm",
     },
     event = "VeryLazy",
