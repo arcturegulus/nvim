@@ -3,6 +3,7 @@ local M = {
     dependencies = {
         "dressing.nvim",
         "telescope.nvim",
+        "toggleterm.nvim",
     },
     config = {
         templates = { "builtin" },
