@@ -24,6 +24,7 @@ local M = {
                 "lazy",
                 "alpha",
                 "TelescopePrompt",
+                "OverseerForm",
             },
             ignore_focus = {
                 "NvimTree",
