@@ -9,6 +9,7 @@ local M = {
             "Trouble",
             "lazy",
             "norg",
+            "OverseerForm",
         },
     },
     event = "BufReadPre",
