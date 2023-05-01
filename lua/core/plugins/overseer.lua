@@ -7,7 +7,10 @@ local M = {
     },
     config = {
         templates = { "builtin" },
-        strategy = "toggleterm",
+        strategy = {
+            "toggleterm",
+            direction = "vertical",
+        },
     },
     event = "VeryLazy",
 }
