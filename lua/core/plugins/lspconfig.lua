@@ -12,7 +12,7 @@ local M = {
         servers = require("core.plugins.lsp.servers"),
         setup = {},
     },
-    event = "BufReadPre",
+    event = "VeryLazy",
 }
 
 M.config = function(_, opts)

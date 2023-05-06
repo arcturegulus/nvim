@@ -10,7 +10,7 @@ local M = {
         show_dirname = false,
         theme = "auto",
     },
-    event = "BufReadPre",
+    event = "VeryLazy",
 }
 
 return M
