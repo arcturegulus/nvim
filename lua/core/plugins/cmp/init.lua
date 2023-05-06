@@ -63,6 +63,7 @@ M.opts = function()
         }),
         sources = cmp.config.sources({
             { name = "nvim_lsp" },
+            { name = "omni" },
             { name = "luasnip" },
             { name = "path" },
             { name = "nvim_lua" },
