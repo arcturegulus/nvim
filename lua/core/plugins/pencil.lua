@@ -1,6 +1,6 @@
 local M = {
     "preservim/vim-pencil",
-    event = "BufReadPre",
+    lazy = false,
 }
 
 return M
