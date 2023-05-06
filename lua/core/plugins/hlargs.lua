@@ -1,7 +1,7 @@
 local M = {
     "m-demare/hlargs.nvim",
     config = true,
-    event = "BufReadPre",
+    event = "VeryLazy",
 }
 
 return M

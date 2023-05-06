@@ -12,7 +12,7 @@ local M = {
             "OverseerForm",
         },
     },
-    event = "BufReadPre",
+    event = "VeryLazy",
 }
 
 return M
