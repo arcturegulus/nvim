@@ -5,7 +5,7 @@ local M = {
             "c",
             "lua",
             "vim",
-            "help",
+            "vimdoc",
             "query",
 
             "cpp",
