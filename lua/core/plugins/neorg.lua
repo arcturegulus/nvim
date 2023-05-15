@@ -36,6 +36,7 @@ local M = {
             },
         },
     },
+    version = "4.0.1",
     event = "VeryLazy",
 }
 
