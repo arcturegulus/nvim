@@ -19,7 +19,7 @@ M.config = function(_, opts)
     local mlsp = require("mason-lspconfig")
     local ensure_installed = {}
     local servers = opts.servers
-    local capabilities = vim.lsp.protocol.make_client_capabilities()
+    local capabilities = require("cmp_nvim_lsp").default_capabilities()
     local available = mlsp.get_available_servers()
     local function setup(server)
         local server_opts = servers[server] or {}
