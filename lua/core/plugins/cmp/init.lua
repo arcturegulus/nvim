@@ -64,7 +64,6 @@ M.opts = function()
         }),
         sources = cmp.config.sources({
             { name = "nvim_lsp" },
-            { name = "omni" },
             { name = "luasnip" },
             { name = "nvim_lua" },
             { name = "path" },
@@ -81,6 +80,19 @@ M.opts = function()
             end,
         },
     }
+end
+
+M.config = function(_, opts)
+    local cmp = require("cmp")
+
+    cmp.setup(opts)
+
+    -- autocompletion for latex files
+    cmp.setup.filetype("tex", {
+        sources = cmp.config.sources({
+            { name = "omni" }
+        })
+    })
 end
 
 return M
