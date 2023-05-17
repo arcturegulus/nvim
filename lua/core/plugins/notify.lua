@@ -1,5 +1,8 @@
+local settings = require("core.config.settings")
+
 local M = {
     "rcarriga/nvim-notify",
+    enabled = settings.enable_notify_nvim,
     opts = {
         timeout = 3000,
         max_height = 10,
