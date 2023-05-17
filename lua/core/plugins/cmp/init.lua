@@ -67,6 +67,7 @@ M.opts = function()
             { name = "luasnip" },
             { name = "path" },
             { name = "nvim_lua" },
+        }, {
             { name = "buffer" },
         }),
         formatting = {
