@@ -90,6 +90,7 @@ M.opts = function()
                 return vim_item
             end,
         },
+        preselect = cmp.PreselectMode.None,
     }
 end
 
