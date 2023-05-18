@@ -10,7 +10,7 @@ local M = {
   config = function(_, opts)
     require("rose-pine").setup(opts)
     if settings.is_theme("rose-pine") then
-      vim.cmd([[colorscheme rose-pine]])
+      vim.cmd("colorscheme rose-pine")
     end
   end,
   event = "VeryLazy",

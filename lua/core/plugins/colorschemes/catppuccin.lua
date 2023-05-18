@@ -41,7 +41,7 @@ local M = {
   config = function(_, opts)
     require("catppuccin").setup(opts)
     if settings.is_theme("catppuccin") then
-      vim.cmd([[colorscheme catppuccin]])
+      vim.cmd("colorscheme catppuccin")
     end
   end,
   event = "VeryLazy",

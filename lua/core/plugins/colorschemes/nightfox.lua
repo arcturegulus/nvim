@@ -7,7 +7,7 @@ local M = {
   config = function(_, opts)
     require("nightfox").setup(opts)
     if settings.is_theme("nightfox") then
-      vim.cmd([[colorscheme nightfox]])
+      vim.cmd("colorscheme nightfox")
     end
   end,
   event = "VeryLazy",

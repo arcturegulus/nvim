@@ -10,7 +10,7 @@ local M = {
   config = function(_, opts)
     require("everblush").setup(opts)
     if settings.is_theme("everblush") then
-      vim.cmd([[colorscheme everblush]])
+      vim.cmd("colorscheme everblush")
     end
   end,
   event = "VeryLazy",
