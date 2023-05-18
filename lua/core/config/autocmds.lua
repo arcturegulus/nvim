@@ -1,15 +1,15 @@
 local utils = require("core.config.utils")
 
 local function augroup(name)
-    return vim.api.nvim_create_augroup(name, { clear = true })
+  return vim.api.nvim_create_augroup(name, { clear = true })
 end
 
 -- auto-resize nvim-tree when resizing window
 vim.api.nvim_create_autocmd("VimResized", {
-    group = augroup("AutoNvimTreeResize"),
-    callback = function ()
-        vim.cmd(string.format("NvimTreeResize %s", utils.get_nvim_tree_width()))
-    end
+  group = augroup("AutoNvimTreeResize"),
+  callback = function()
+    vim.cmd(string.format("NvimTreeResize %s", utils.get_nvim_tree_width()))
+  end,
 })
 
 -- barbar.nvim offset
@@ -46,16 +46,16 @@ vim.api.nvim_create_autocmd("VimResized", {
 
 -- auto-initialize vim-pencil for text filetypes
 vim.api.nvim_create_autocmd("FileType", {
-    group = augroup("AutoPencil"),
-    command = "PencilSoft",
-    pattern = utils.text_filetypes,
+  group = augroup("AutoPencil"),
+  command = "PencilSoft",
+  pattern = utils.text_filetypes,
 })
 
 -- disable cmp for text filetypes
 vim.api.nvim_create_autocmd("Filetype", {
-    group = augroup("AutoDisableCompletion"),
-    callback = function()
-        require("cmp").setup.buffer { enabled = false }
-    end,
-    pattern = utils.text_filetypes,
+  group = augroup("AutoDisableCompletion"),
+  callback = function()
+    require("cmp").setup.buffer({ enabled = false })
+  end,
+  pattern = utils.text_filetypes,
 })

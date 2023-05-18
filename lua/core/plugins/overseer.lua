@@ -1,18 +1,18 @@
 local M = {
-    "stevearc/overseer.nvim",
-    dependencies = {
-        "dressing.nvim",
-        "telescope.nvim",
-        "toggleterm.nvim",
+  "stevearc/overseer.nvim",
+  dependencies = {
+    "dressing.nvim",
+    "telescope.nvim",
+    "toggleterm.nvim",
+  },
+  config = {
+    templates = { "builtin" },
+    strategy = {
+      "toggleterm",
+      direction = "horizontal",
     },
-    config = {
-        templates = { "builtin" },
-        strategy = {
-            "toggleterm",
-            direction = "horizontal",
-        },
-    },
-    event = "VeryLazy",
+  },
+  event = "VeryLazy",
 }
 
 return M

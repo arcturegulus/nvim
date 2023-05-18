@@ -1,6 +1,6 @@
 local M = {
-    "jghauser/mkdir.nvim",
-    event = "BufWritePre",
+  "jghauser/mkdir.nvim",
+  event = "BufWritePre",
 }
 
 return M

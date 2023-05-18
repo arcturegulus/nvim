@@ -1,18 +1,18 @@
 local M = {
-    "lukas-reineke/indent-blankline.nvim",
-    enabled = true,
-    opts = {
-        filetype_exclude = {
-            "help",
-            "alpha",
-            "NvimTree",
-            "Trouble",
-            "lazy",
-            "norg",
-            "OverseerForm",
-        },
+  "lukas-reineke/indent-blankline.nvim",
+  enabled = true,
+  opts = {
+    filetype_exclude = {
+      "help",
+      "alpha",
+      "NvimTree",
+      "Trouble",
+      "lazy",
+      "norg",
+      "OverseerForm",
     },
-    event = "VeryLazy",
+  },
+  event = "VeryLazy",
 }
 
 return M

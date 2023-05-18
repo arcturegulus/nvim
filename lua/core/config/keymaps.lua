@@ -47,9 +47,9 @@ map("n", "<Leader>o", "<Cmd>OverseerRun<CR>", opts)
 
 -- rename symbol under cursor
 map("n", "<Leader>rn", function()
-    return ":IncRename " .. vim.fn.expand("<cword>")
+  return ":IncRename " .. vim.fn.expand("<cword>")
 end, { expr = true })
 
 map("n", "<Leader>p", function()
-    require("nabla").popup()
+  require("nabla").popup()
 end, opts)
