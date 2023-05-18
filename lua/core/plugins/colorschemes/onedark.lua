@@ -13,7 +13,7 @@ local M = {
   config = function(_, opts)
     require("onedark").setup(opts)
     if settings.is_theme("onedark") then
-      vim.cmd([[colorscheme onedark]])
+      vim.cmd("colorscheme onedark")
     end
   end,
   event = "VeryLazy",

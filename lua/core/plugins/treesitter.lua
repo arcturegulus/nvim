@@ -25,7 +25,7 @@ local M = {
     require("nvim-treesitter.install").prefer_git = false
     require("nvim-treesitter.install").compilers = { "clang", "gcc" }
 
-    vim.cmd([[TSUpdate]])
+    vim.cmd("TSUpdate")
   end,
   event = "VeryLazy",
 }

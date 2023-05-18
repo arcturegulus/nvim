@@ -13,7 +13,7 @@ local M = {
   config = function(_, opts)
     require("tokyonight").setup(opts)
     if settings.is_theme("tokyonight") then
-      vim.cmd([[colorscheme tokyonight]])
+      vim.cmd("colorscheme tokyonight")
     end
   end,
   event = "VeryLazy",
