@@ -9,7 +9,7 @@ M.guifont = "JetbrainsMono Nerd Font, JetBrains Mono:#h-none" -- font for nvim g
 M.disable_notify_nvim = false -- disable notify.nvim plugin
 
 function M.is_theme(name)
-    return name == M.theme
+  return name == M.theme
 end
 
 return M

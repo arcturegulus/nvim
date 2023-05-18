@@ -1,12 +1,12 @@
 local M = {
-    "ray-x/lsp_signature.nvim",
-    opts = {
-        bind = true,
-        handler_opts = {
-            border = "rounded"
-        }
+  "ray-x/lsp_signature.nvim",
+  opts = {
+    bind = true,
+    handler_opts = {
+      border = "rounded",
     },
-    event = "VeryLazy",
+  },
+  event = "VeryLazy",
 }
 
 return M

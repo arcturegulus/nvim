@@ -1,6 +1,6 @@
 local M = {
-    "preservim/vim-pencil",
-    lazy = false,
+  "preservim/vim-pencil",
+  lazy = false,
 }
 
 return M

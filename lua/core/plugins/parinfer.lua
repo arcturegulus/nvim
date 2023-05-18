@@ -1,6 +1,6 @@
 local M = {
-    "gpanders/nvim-parinfer",
-    event = "VeryLazy",
+  "gpanders/nvim-parinfer",
+  event = "VeryLazy",
 }
 
 return M

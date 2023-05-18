@@ -1,7 +1,7 @@
 local M = {
-    "smjonas/inc-rename.nvim",
-    config = true,
-    event = "VeryLazy",
+  "smjonas/inc-rename.nvim",
+  config = true,
+  event = "VeryLazy",
 }
 
 return M
