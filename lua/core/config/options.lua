@@ -23,6 +23,8 @@ o.clipboard = "unnamedplus" -- let nvim access os clipboard
 
 o.autochdir = settings.autochdir -- automatically change working directory
 
+vim.g.editorconfig = true -- enable .editorconfig
+
 -- neovide configuration
 if vim.g.neovide then
   vim.o.guifont = settings.guifont
