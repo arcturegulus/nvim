@@ -27,6 +27,10 @@ local M = {
           fg = colors.mantle,
           bg = colors.mantle,
         },
+        NeoTreeWinSeparator = {
+          fg = colors.mantle,
+          bg = colors.mantle,
+        },
         NvimTreeWinSeparator = {
           fg = colors.mantle,
           bg = colors.mantle,
