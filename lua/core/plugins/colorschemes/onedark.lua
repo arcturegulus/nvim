@@ -4,7 +4,7 @@ local M = {
   "navarasu/onedark.nvim",
   lazy = not settings.is_theme("onedark"),
   opts = {
-    style = "darker",
+    style = "deep",
     transparent = settings.transparent,
     lualine = {
       transparent = settings.transparent,
