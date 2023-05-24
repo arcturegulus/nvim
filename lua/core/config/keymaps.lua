@@ -25,7 +25,7 @@ map("n", "<C-x>", "<Cmd>Bdelete<CR>", opts)
 map("n", "<C-P>", "<Cmd>BufferLinePick<CR>", opts)
 
 -- toggle file explorer
-map("n", "<Leader>fe", "<Cmd>NvimTreeToggle<CR>", opts)
+map("n", "<Leader>fe", "<Cmd>Neotree toggle<CR>", opts)
 
 -- toggle trouble buffer
 map("n", "<Leader>tr", "<Cmd>TroubleToggle<CR>", opts)

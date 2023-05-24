@@ -5,6 +5,7 @@ local M = {
     filetype_exclude = {
       "help",
       "alpha",
+      "neo-tree",
       "NvimTree",
       "Trouble",
       "lazy",

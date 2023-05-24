@@ -11,6 +11,11 @@ local M = {
       diagnostics = "nvim_lsp",
       offsets = {
         {
+          filetype = "neo-tree",
+          text_align = "center",
+          separator = true,
+        },
+        {
           filetype = "NvimTree",
           text_align = "center",
           separator = true,

@@ -27,6 +27,7 @@ local M = {
         "OverseerForm",
       },
       ignore_focus = {
+        "neo-tree",
         "NvimTree",
         "fugitive",
       },

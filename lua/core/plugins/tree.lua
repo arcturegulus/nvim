@@ -4,6 +4,7 @@ local utils = require("core.config.utils")
 
 local M = {
   "nvim-tree/nvim-tree.lua",
+  enabled = false,
   dependencies = { "nvim-web-devicons" },
   opts = {
     sync_root_with_cwd = true,
