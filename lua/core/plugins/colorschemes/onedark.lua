@@ -9,6 +9,11 @@ local M = {
     lualine = {
       transparent = settings.transparent,
     },
+    highlights = {
+      BufferLineOffsetSeparator = { fg = "#151b23", bg = "#151b23" },
+      NeoTreeWinSeparator = { fg = "#151b23", bg = "#151b23" },
+      -- WinSeparator = {},
+    },
   },
   config = function(_, opts)
     require("onedark").setup(opts)
