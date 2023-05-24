@@ -12,7 +12,6 @@ local M = {
     },
     integrations = {
       tmux = true,
-      twilight = true,
       lualine = true,
     },
   },
