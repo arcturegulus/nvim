@@ -1,4 +1,5 @@
 local M = {
+  require("core.plugins.colorschemes.ayu"),
   require("core.plugins.colorschemes.catppuccin"),
   require("core.plugins.colorschemes.everblush"),
   require("core.plugins.colorschemes.nightfox"),
