@@ -47,6 +47,12 @@ local M = {
             use_libuv_file_watcher = true,
         },
     },
+    config = function(_, opts)
+      require("neo-tree").setup(opts)
+
+      -- toggle file explorer
+      utils.map("n", "<Leader>fe", "<Cmd>Neotree toggle<CR>", "open file explorer")
+    end,
     event = "VeryLazy",
 }
 

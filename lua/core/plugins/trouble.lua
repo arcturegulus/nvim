@@ -4,6 +4,17 @@ local M = {
   opts = {
     use_diagnostic_signs = true,
   },
+  config = function(_, opts)
+    local trouble = require("trouble")
+    local utils = require("core.config.utils")
+
+    trouble.setup(opts)
+
+    -- toggle trouble buffer
+    utils.map("n", "<Leader>tr", function()
+      trouble.toggle()
+    end, "check problems")
+  end,
   cmd = { "TroubleToggle", "Trouble" },
 }
 
