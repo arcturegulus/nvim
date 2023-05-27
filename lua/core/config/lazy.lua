@@ -31,3 +31,10 @@ lazy.setup({
   install = { colorscheme = { "habamax" } }, -- default colorscheme
   checker = { enabled = true }, -- check plugin updates
 })
+
+-- set lazy.nvim keymap
+local utils = require("core.config.utils")
+
+utils.map("n", "<Leader>l", function()
+  lazy.home()
+end, "lazy.nvim home")

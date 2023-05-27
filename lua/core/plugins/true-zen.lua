@@ -16,6 +16,8 @@ local M = {
     },
   },
   config = function(_, opts)
+    local truezen = require("true-zen")
+    local utils = require("core.config.utils")
     local manager = require("neo-tree.sources.manager")
     local renderer = require("neo-tree.ui.renderer")
 
@@ -58,7 +60,12 @@ local M = {
       },
     })
 
-    require("true-zen").setup(config)
+    truezen.setup(opts)
+
+    -- toggle true-zen (ataraxis)
+    utils.map("n", "<Leader>tz", function()
+      truezen.ataraxis()
+    end, "toggle zen mode")
   end,
   event = "VeryLazy",
 }
