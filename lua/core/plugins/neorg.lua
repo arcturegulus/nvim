@@ -10,11 +10,11 @@ local M = {
           type = "auto",
         },
       },
-      ["core.completion"] = {
-        config = {
-          engine = "nvim-cmp",
-        },
-      },
+      -- ["core.completion"] = {
+      --   config = {
+      --     -- engine = "nvim-cmp",
+      --   },
+      -- },
       ["core.export"] = {
         config = {
           export_dir = "exports",
@@ -36,7 +36,6 @@ local M = {
       },
     },
   },
-  version = "4.0.1",
   event = "VeryLazy",
 }
 
