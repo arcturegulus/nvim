@@ -1,9 +1,7 @@
 local M = {
   "williamboman/mason.nvim",
-  lazy = false,
-  config = function()
-    require("mason").setup()
-  end,
+  config = true,
+  build = ":MasonUpdate",
 }
 
 return M

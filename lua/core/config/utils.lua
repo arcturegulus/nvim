@@ -7,6 +7,10 @@ function M.map(mode, lhs, rhs, desc, opts)
   vim.keymap.set(mode, lhs, rhs, opts)
 end
 
+function M.pumvisible()
+  return vim.fn.pumvisible() ~= 0
+end
+
 function M.get_nvim_tree_width()
   local width = math.floor(vim.go.columns * 0.25)
   local max_width = 25
