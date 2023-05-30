@@ -9,7 +9,7 @@ local M = {
 
     -- rename symbol under cursor
     utils.map("n", "<Leader>rn", function()
-      return ":IncRename " .. vim.fn.expand("<cword>")
+      return ":IncRename "
     end, "rename symbol under cursor", { expr = true })
   end,
   event = "VeryLazy",
