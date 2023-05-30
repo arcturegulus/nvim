@@ -34,6 +34,9 @@ local M = {
       },
       clients = {
         snippets = { enabled = false },
+        paths = { enabled = false },
+        tree_sitter = { enabled = false },
+        buffers = { enabled = false },
       },
     },
     config = function(_, opts)
