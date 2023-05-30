@@ -30,6 +30,7 @@ local M = {
       keymap = {
         recommended = false, -- manual setup for nvim-autopairs
         pre_select = true,
+        bigger_preview = "",
         jump_to_mark = "",
       },
       clients = {
