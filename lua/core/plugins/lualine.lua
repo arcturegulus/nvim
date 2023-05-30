@@ -14,6 +14,7 @@ local M = {
   dependencies = {
     "gitsigns.nvim",
     "nvim-web-devicons",
+    "material.nvim",
   },
   opts = {
     options = {
