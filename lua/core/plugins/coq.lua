@@ -2,7 +2,7 @@ local M = {
   {
     "ms-jpq/coq_nvim",
     dependencies = {
-      { "ms-jpq/coq.artifacts", branch = "artifacts" },
+      -- { "ms-jpq/coq.artifacts", branch = "artifacts" },
       "coq.thirdparty",
     },
     opts = {
@@ -14,7 +14,7 @@ local M = {
         },
         pum = {
           fast_close = false,
-          y_max_len = 11,
+          y_max_len = 12,
           x_max_len = 55,
           x_truncate_len = 12,
           kind_context = { " [", "]" },
@@ -29,6 +29,11 @@ local M = {
       },
       keymap = {
         recommended = false, -- manual setup for nvim-autopairs
+        pre_select = true,
+        jump_to_mark = "",
+      },
+      clients = {
+        snippets = { enabled = false },
       },
     },
     config = function(_, opts)
@@ -44,13 +49,17 @@ local M = {
       utils.map("i", "<C-c>", function()
         return utils.pumvisible() and "<C-e><C-c>" or "<C-c>"
       end, nil, { expr = true })
-      -- <Tab>: select next item if completion menu is open
-      utils.map("i", "<Tab>", function()
-        return utils.pumvisible() and "<C-n>" or "<Tab>"
+      -- <C-j>: select next item if completion menu is open
+      utils.map("i", "<C-j>", function()
+        return utils.pumvisible() and "<C-n>" or "<C-j>"
       end, nil, { expr = true })
-      -- <S-Tab>: select previous item if completion menu is open
-      utils.map("i", "<S-Tab>", function()
-        return utils.pumvisible() and "<C-p>" or "<BS>"
+      -- <C-k>: select previous item if completion menu is open
+      utils.map("i", "<C-k>", function()
+        return utils.pumvisible() and "<C-p>" or "<C-k>"
+      end, nil, { expr = true })
+      -- <Tab>: confirm completion
+      utils.map("i", "<Tab>", function()
+        return utils.pumvisible() and "<C-y>" or "<Tab>"
       end, nil, { expr = true })
 
       vim.cmd("COQnow -s")
