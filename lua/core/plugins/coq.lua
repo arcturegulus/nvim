@@ -7,6 +7,9 @@ local M = {
     },
     opts = {
       auto_start = true,
+      completion = {
+        skip_after = { "(", ")", "{", "}", "[", "]", ";", " " },
+      },
       display = {
         ghost_text = {
           enabled = true,
