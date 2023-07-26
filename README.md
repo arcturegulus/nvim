@@ -1,7 +1,8 @@
-# bluereflega/nvim
+# ~arcturegulus/nvim
 
-TODO:
-- [ ] add debugging ([nvim-dap](https://github.com/mfussenegger/nvim-dap))
+## Todo
+
+- add [debugging](https://github.com/mfussenegger/nvim-dap)
 
 ## Philosophy
 
