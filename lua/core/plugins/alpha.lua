@@ -12,14 +12,14 @@ local M = {
 M.opts = function()
   local dashboard = require("alpha.themes.dashboard")
   local logo = [[
-                  ▄    ▄                      
-                 █ █  █ █                     
- ▄▄▄▄     ▄▄   ▄▄▀▀  █  █   ▄▄    ▄▄▄ ▄  ▄▄ ▄ 
-  █  █  ▄▀  █ ▀▀█▄   ▀▄█  ▄▀  █ ▄▀ █ █  █  █  
-▄▀  █▀ ▄█▄▀▀ ▄ █  █ ▄▄█▀ ▄█▄▀▀ ▄█   █ ▄█  ▄█  
-     ▀▀  ▀▀▀▀ ▄▀  █    ▀▀  ▀▀▀▀  ▀▀██▀  ▀▀  ▀▀
-bluereflega's █   █ neovim       ▄▀▄▀         
-               ▀▄▀               ▀▄▀          
+                                 ▄                   
+                                █ █                  
+ ▄▄▄▄     ▄▄    ▄▄▄ ▄  ▄   ▄   █  █   ▄   ▄     ▄    
+  █  █  ▄▀  █ ▄▀ █ █  ▄▀  ▄▀   ▀▄█   ▄▀  ▄▀    ▄▀▀▄  
+▄▀  █▀ ▄█▄▀▀ ▄█   █ ▄▄█  ▄█  ▄▄▄█▀ ▄▄█  ▄█  ▄ ▄█  █  
+     ▀▀  ▀▀▀▀  ▀▀██▀   ▀▀  ▀▀    ▀▀   ▀▀  ▀▀ ▀  ▀▀ ▀▀
+               ▄▀▄▀  arcturegulus's neovim           
+               ▀▄▀                                   
     ]]
 
   dashboard.section.header.val = vim.split(logo, "\n")
