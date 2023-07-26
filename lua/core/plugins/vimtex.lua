@@ -1,3 +1,4 @@
+-- LaTeX support
 local M = {
   "lervag/vimtex",
   lazy = false,

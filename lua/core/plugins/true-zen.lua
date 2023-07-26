@@ -1,3 +1,4 @@
+-- toggleable distraction-free modes
 local M = {
   "Pocco81/true-zen.nvim",
   dependencies = {

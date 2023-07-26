@@ -1,3 +1,4 @@
+-- framework for hover providers
 local M = {
   "lewis6991/hover.nvim",
   opts = {

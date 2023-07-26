@@ -1,3 +1,4 @@
+-- code debugging
 local M = {
   "mfussenegger/nvim-dap",
   dependencies = {

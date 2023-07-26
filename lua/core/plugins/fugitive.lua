@@ -1,3 +1,4 @@
+-- git
 local M = {
   "tpope/vim-fugitive",
   event = "VeryLazy",

@@ -1,3 +1,4 @@
+-- highlights other uses of word under cursor
 local M = {
   "RRethy/vim-illuminate",
   opts = {

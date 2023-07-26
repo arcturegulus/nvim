@@ -1,3 +1,4 @@
+-- icons for a variety of plugins
 local M = {
   "nvim-tree/nvim-web-devicons",
 }

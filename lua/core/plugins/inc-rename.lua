@@ -1,3 +1,4 @@
+-- quick renaming lsp symbols
 local M = {
   "smjonas/inc-rename.nvim",
   opts = {},

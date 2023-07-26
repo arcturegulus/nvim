@@ -1,5 +1,6 @@
 local settings = require("core.config.settings")
 
+-- notification manager
 local M = {
   "rcarriga/nvim-notify",
   enabled = settings.enable_notify_nvim,

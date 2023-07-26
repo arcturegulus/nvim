@@ -1,3 +1,4 @@
+-- toggleable code diagnostics window
 local M = {
   "folke/trouble.nvim",
   dependencies = { "nvim-web-devicons" },

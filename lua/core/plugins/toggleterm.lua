@@ -1,3 +1,4 @@
+-- wrapper for terminals in neovim
 local M = {
   "akinsho/toggleterm.nvim",
   opts = {

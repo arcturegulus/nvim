@@ -1,3 +1,4 @@
+-- autopairs (automatically closing pair characters when typing)
 local M = {
   "windwp/nvim-autopairs",
   dependencies = { "coq_nvim" },

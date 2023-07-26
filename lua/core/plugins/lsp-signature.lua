@@ -1,3 +1,4 @@
+-- show function signature when typing
 local M = {
   "ray-x/lsp_signature.nvim",
   opts = {

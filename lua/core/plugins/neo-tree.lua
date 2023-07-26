@@ -1,5 +1,6 @@
 local utils = require("core.config.utils")
 
+-- file explorer
 local M = {
     "nvim-neo-tree/neo-tree.nvim",
     dependencies = {
