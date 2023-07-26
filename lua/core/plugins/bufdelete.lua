@@ -1,3 +1,4 @@
+-- alternate buffer deletion commands that don't change the window layout
 local M = {
   "famiu/bufdelete.nvim",
   config = function()

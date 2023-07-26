@@ -1,3 +1,4 @@
+-- dims inactive code
 local M = {
   "folke/twilight.nvim",
   opts = {

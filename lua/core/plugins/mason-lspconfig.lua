@@ -1,3 +1,4 @@
+-- mason.nvim and nvim-lspconfig bridge
 local M = {
   "williamboman/mason-lspconfig.nvim",
   dependencies = {

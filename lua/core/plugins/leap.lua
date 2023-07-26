@@ -1,3 +1,4 @@
+-- quick motions
 local M = {
   "ggandor/leap.nvim",
   dependencies = {

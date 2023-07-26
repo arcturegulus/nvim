@@ -1,3 +1,4 @@
+-- yuck support
 local M = {
   "elkowar/yuck.vim",
   ft = "yuck",

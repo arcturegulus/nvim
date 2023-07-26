@@ -1,5 +1,5 @@
+-- startup greeter
 -- TODO: add configuring dashboard theme
-
 local M = {
   "goolord/alpha-nvim",
   dependencies = { "nvim-web-devicons" },

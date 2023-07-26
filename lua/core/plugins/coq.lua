@@ -1,3 +1,4 @@
+-- code completion
 local M = {
   {
     "ms-jpq/coq_nvim",

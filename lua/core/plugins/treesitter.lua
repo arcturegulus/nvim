@@ -1,3 +1,4 @@
+-- treesitter in neovim
 local M = {
   "nvim-treesitter/nvim-treesitter",
   dependencies = { "nvim-treesitter/playground" },

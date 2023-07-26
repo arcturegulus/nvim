@@ -1,3 +1,4 @@
+-- displays popup window of possible key bindings when typing a command
 local M = {
   "folke/which-key.nvim",
   opts = {

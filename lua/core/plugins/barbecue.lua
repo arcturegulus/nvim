@@ -1,3 +1,4 @@
+-- breadcrumbs
 local M = {
   "utilyre/barbecue.nvim",
   name = "barbecue",

@@ -1,3 +1,4 @@
+-- color highlighter
 local M = {
   "NvChad/nvim-colorizer.lua",
   opts = {

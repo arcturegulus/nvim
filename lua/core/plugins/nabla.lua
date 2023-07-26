@@ -1,3 +1,4 @@
+-- previewing latex equations in ASCII
 local M = {
   "jbyuki/nabla.nvim",
   opts = {},

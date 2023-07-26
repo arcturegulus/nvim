@@ -1,3 +1,4 @@
+-- indent lines
 local M = {
   "lukas-reineke/indent-blankline.nvim",
   dependencies = { "nvim-treesitter" },

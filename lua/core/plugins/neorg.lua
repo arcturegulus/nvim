@@ -1,3 +1,4 @@
+-- documenting and organizing in plaintext
 local M = {
   "nvim-neorg/neorg",
   build = ":Neorg sync-parsers",
