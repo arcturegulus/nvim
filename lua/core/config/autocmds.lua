@@ -50,12 +50,3 @@ vim.api.nvim_create_autocmd("FileType", {
   command = "PencilSoft",
   pattern = utils.text_filetypes,
 })
-
--- disable cmp for text filetypes
--- vim.api.nvim_create_autocmd("Filetype", {
---   group = augroup("AutoDisableCompletion"),
---   callback = function()
---     require("cmp").setup.buffer({ enabled = false })
---   end,
---   pattern = utils.text_filetypes,
--- })

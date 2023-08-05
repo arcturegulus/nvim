@@ -11,11 +11,6 @@ local M = {
           type = "auto",
         },
       },
-      -- ["core.completion"] = {
-      --   config = {
-      --     -- engine = "nvim-cmp",
-      --   },
-      -- },
       ["core.export"] = {
         config = {
           export_dir = "exports",
