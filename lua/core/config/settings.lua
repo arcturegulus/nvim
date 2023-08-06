@@ -1,6 +1,6 @@
 local M = {}
 
-M.theme = "catppuccin" -- theme on startup
+M.theme = "nordic" -- theme on startup
 M.transparent = false -- transparency
 M.number = true -- show line numbers in gutter
 M.relative_number = true -- show relative line numbers
