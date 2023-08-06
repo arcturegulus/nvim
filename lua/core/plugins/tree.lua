@@ -2,9 +2,9 @@
 -- the only buffer left is nvim-tree's
 local utils = require("core.config.utils")
 
+-- file explorer
 local M = {
   "nvim-tree/nvim-tree.lua",
-  enabled = false,
   dependencies = { "nvim-web-devicons" },
   opts = {
     sync_root_with_cwd = true,
@@ -15,12 +15,12 @@ local M = {
       root_folder_label = false,
       group_empty = true,
       highlight_git = true,
-      indent_markers = {
-        enable = true,
-      },
+      -- indent_markers = {
+      --   enable = true,
+      -- },
       icons = {
         git_placement = "after",
-        show = { folder_arrow = false },
+        -- show = { folder_arrow = false },
         glyphs = {
           git = {
             unstaged = "󱓌",
@@ -53,6 +53,9 @@ local M = {
     -- if not real_file and not no_name then
     --     require("nvim-tree.api").tree.open()
     -- end
+
+    -- toggle file explorer
+    utils.map("n", "<Leader>fe", "<Cmd>NvimTreeToggle<CR>", "toggle file explorer")
   end,
   event = "UIEnter",
 }
