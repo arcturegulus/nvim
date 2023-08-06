@@ -3,7 +3,7 @@ local M = {
   "Pocco81/true-zen.nvim",
   dependencies = {
     "twilight.nvim",
-    "neo-tree.nvim",
+    "nvim-tree.lua",
   },
   opts = {
     modes = {
@@ -19,28 +19,24 @@ local M = {
   config = function(_, opts)
     local truezen = require("true-zen")
     local utils = require("core.config.utils")
-    local manager = require("neo-tree.sources.manager")
-    local renderer = require("neo-tree.ui.renderer")
+    local ntapi = require("nvim-tree.api")
 
-    -- close neo-tree if it is open
+    -- close file explorer if open
     local function close_filetree()
-      local state = manager.get_state("filesystem")
-      local window_exists = renderer.window_exists(state)
-
-      if window_exists then
+      local visible = ntapi.tree.is_visible()
+      if visible then
         vim.g.tree_open_before_tz = true
-        vim.cmd("Neotree close")
+        ntapi.tree.close_in_this_tab()
       end
     end
 
-    -- open neo-tree if it was open before
+    -- open file explorer if it was open before
     local function open_filetree()
-      local state = manager.get_state("filesystem")
-      local window_exists = renderer.window_exists(state)
+      local visible = ntapi.tree.is_visible()
 
-      if vim.g.tree_open_before_tz and not window_exists then
+      if vim.g.tree_open_before_tz and not visible then
         vim.g.tree_open_before_tz = false
-        vim.cmd("Neotree show")
+        ntapi.tree.open()
       end
     end
 
@@ -61,7 +57,7 @@ local M = {
       },
     })
 
-    truezen.setup(opts)
+    truezen.setup(config)
 
     -- toggle true-zen (ataraxis)
     utils.map("n", "<Leader>tz", function()
