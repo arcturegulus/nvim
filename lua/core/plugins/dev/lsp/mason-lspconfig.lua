@@ -9,7 +9,7 @@ local M = {
   config = function()
     local mlsp = require("mason-lspconfig")
     local coq = require("coq")
-    local servers = require("core.plugins.lsp.servers")
+    local servers = require("core.plugins.dev.lsp.servers")
     local ensure_installed = {}
 
     for server, _ in pairs(servers) do

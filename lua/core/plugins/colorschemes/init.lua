@@ -1,3 +1,4 @@
+-- colorschemes
 local M = {
   require("core.plugins.colorschemes.catppuccin"),
   require("core.plugins.colorschemes.everblush"),
