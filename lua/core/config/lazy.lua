@@ -29,7 +29,6 @@ lazy.setup({
     version = false, -- default: get latest versions of plugins
   },
   install = { colorscheme = { "habamax" } }, -- default colorscheme
-  checker = { enabled = true }, -- check plugin updates
 })
 
 -- set lazy.nvim keymap
