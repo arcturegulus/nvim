@@ -1,4 +1,4 @@
-# ~arcturegulus/nvim
+# arcturegulus/nvim
 
 ## Todo
 
