@@ -1,9 +1,4 @@
-# arcturegulus/nvim
+Unmaintained for now; I no longer use Neovim for writing code.
 
-## Todo
-
-- add [debugging](https://github.com/mfussenegger/nvim-dap)
-
-## Philosophy
-
-i look at other people's neovim configs. i see something i like, i add it here (badly)
+Nowadays I have a more lightweight config for writing notes or prose in Markdown
+with live PDF export. Maybe I'll push that here someday.
